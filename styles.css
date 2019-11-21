@@ -50,7 +50,7 @@ h3 {
 	width: 60%;
 	opacity: 0;
 	transform: translateX(-100%) translateY(40vh);
-	transition: all 2s ease-in-out;
+	transition: all 1s ease-in-out;
 	z-index: -1;
 }
 .q6, .q7, .q8, .q9, .q10 {
@@ -58,7 +58,7 @@ h3 {
 	width: 60%;
 	opacity: 0;
 	transform: translateX(200%) translateY(40vh);
-	transition: all 1.5s ease-in-out;
+	transition: all 1s ease-in-out;
 	z-index: -1;
 }
 .no1, .no2, .no3, .no4, .no5 {
@@ -73,6 +73,7 @@ h3 {
 	z-index: 13;
 	top: 12em;
 	left: 2em;
+	transition: color 0.5s;
 }
 .no6, .no7, .no8, .no9, .no10 {
 	color: black;
@@ -86,6 +87,7 @@ h3 {
 	z-index: 13;
 	top: 12em;
 	right: 2em;
+	transition: color 0.5s;
 }
 .no2, .no7 {
 	top: 15em;
@@ -141,6 +143,18 @@ h3 {
 .num5, .num10 {
 	top: 24em;
 }
+.no1:hover,
+.no2:hover,
+.no3:hover,
+.no4:hover,
+.no5:hover,
+.no6:hover,
+.no7:hover,
+.no8:hover,
+.no9:hover,
+.no10:hover {
+	color: lightpink;
+}
 .no1:hover ~.q1,
 .no2:hover ~.q2,
 .no3:hover ~.q3,
@@ -153,6 +167,6 @@ h3 {
 .no10:hover ~.q10 {
 	opacity: 1;
 	transform: translateX(35%) translateY(40vh);
-	transition: all 1.5s ease-in-out;
+	transition: all 1s ease-in-out;
 	z-index: 5;
 }
