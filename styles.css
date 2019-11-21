@@ -153,7 +153,7 @@ h3 {
 .no8:hover,
 .no9:hover,
 .no10:hover {
-	color: lightpink;
+	color: grey;
 }
 .no1:hover ~.q1,
 .no2:hover ~.q2,
