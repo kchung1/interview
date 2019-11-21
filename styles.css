@@ -1,0 +1,158 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	line-height: 1.25;
+	margin: 0;
+	padding: 0;
+	background-color: #ff617d;
+	color: black;
+	overflow: hidden;
+}
+header {
+	background: #ff617d;
+	color: white;
+	text-align: center;
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	z-index: 1;
+}
+h1 {
+	color: black;
+	font-size: 5em;
+	font-weight: 700;
+	width: 95%;
+	margin: 0 auto;
+	left: 2%;
+	position: absolute;
+	top: 1.5em;
+	z-index: 5;
+}
+.shadow {
+	background: white;
+	color: #ff617d;
+	transform: translateX(5px) translateY(3px) skew(10deg, 1deg);
+	z-index: 1;
+}
+.by {
+	margin-top: 0;
+	font-size: 20px;
+}
+h3 {
+	font-size: 2em;
+	color: white;
+}
+.q1, .q2, .q3, .q4, .q5 {
+	position: absolute;
+	width: 60%;
+	opacity: 0;
+	transform: translateX(-100%) translateY(40vh);
+	transition: all 2s ease-in-out;
+	z-index: -1;
+}
+.q6, .q7, .q8, .q9, .q10 {
+	position: absolute;
+	width: 60%;
+	opacity: 0;
+	transform: translateX(200%) translateY(40vh);
+	transition: all 1.5s ease-in-out;
+	z-index: -1;
+}
+.no1, .no2, .no3, .no4, .no5 {
+	color: black;
+	width: 125px;
+	height: 75px;
+	font-size: 2em;
+	font-weight: 900;
+	line-height: 2.25;
+	text-align: center;
+	position: absolute;
+	z-index: 13;
+	top: 12em;
+	left: 2em;
+}
+.no6, .no7, .no8, .no9, .no10 {
+	color: black;
+	width: 125px;
+	height: 75px;
+	font-size: 2em;
+	font-weight: 900;
+	line-height: 2.25;
+	text-align: center;
+	position: absolute;
+	z-index: 13;
+	top: 12em;
+	right: 2em;
+}
+.no2, .no7 {
+	top: 15em;
+}
+.no3, .no8 {
+	top: 18em;
+}
+.no4, .no9 {
+	top: 21em;
+}
+.no5, .no10 {
+	top: 24em;
+}
+.num1, .num2, .num3, .num4, .num5 {
+	background: white;
+	color: #ff617d;
+	width: 125px;
+	height: 75px;
+	font-size: 2em;
+	font-weight: 900;
+	line-height: 2.25;
+	text-align: center;
+	transform: translateX(5px) translateY(3px) skew(10deg, 1deg);
+	position: absolute;
+	z-index: 12;
+	top: 12em;
+	left: 2em;
+}
+.num6, .num7, .num8, .num9, .num10 {
+	background: white;
+	color: #ff617d;
+	width: 125px;
+	height: 75px;
+	font-size: 2em;
+	font-weight: 900;
+	line-height: 2.25;
+	text-align: center;
+	transform: translateX(5px) translateY(3px) skew(10deg, 1deg);
+	position: absolute;
+	z-index: 12;
+	top: 12em;
+	right: 2em;
+}
+.num2, .num7 {
+	top: 15em;
+}
+.num3, .num8 {
+	top: 18em;
+}
+.num4, .num9 {
+	top: 21em;
+}
+.num5, .num10 {
+	top: 24em;
+}
+.no1:hover ~.q1,
+.no2:hover ~.q2,
+.no3:hover ~.q3,
+.no4:hover ~.q4,
+.no5:hover ~.q5,
+.no6:hover ~.q6,
+.no7:hover ~.q7,
+.no8:hover ~.q8,
+.no9:hover ~.q9,
+.no10:hover ~.q10 {
+	opacity: 1;
+	transform: translateX(35%) translateY(40vh);
+	transition: all 1.5s ease-in-out;
+	z-index: 5;
+}
